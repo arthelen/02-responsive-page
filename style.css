@@ -26,6 +26,8 @@ h1 {
 
 main {
   padding: 16px;
+  max-width: 900px; /* Limit the width */
+  margin: 0 auto; /* Center the content */
 }
 
 section {
@@ -122,4 +124,24 @@ a:hover {
 .article img {
   margin-bottom: 20px;
   border-radius: 5px;
+  width: 100%; /* Ensure images fit within the layout */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Reduce heading size */
+  }
+
+  h2 {
+    font-size: 22px; /* Reduce heading size */
+  }
+
+  #featured-article h2 {
+    font-size: 32px; /* Reduce heading size */
+  }
+
+  p {
+    margin-bottom: 12px; /* Adjust paragraph spacing */
+  }
 }
